@@ -1,0 +1,18 @@
+<h1>Listing bracket_nodes</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @bracket_nodes.each do |bracket_node| %>
+  <tr>
+    <td><%= link_to 'Show', bracket_node %></td>
+    <td><%= link_to 'Edit', edit_bracket_node_path(bracket_node) %></td>
+    <td><%= link_to 'Destroy', bracket_node, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New bracket_node', new_bracket_node_path %>

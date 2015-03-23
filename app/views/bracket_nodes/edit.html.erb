@@ -1,0 +1,12 @@
+<h1>Editing bracket_node</h1>
+
+<% form_for(@bracket_node) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @bracket_node %> |
+<%= link_to 'Back', bracket_nodes_path %>

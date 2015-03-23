@@ -1,0 +1,11 @@
+<h1>New bracket_node</h1>
+
+<% form_for(@bracket_node) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', bracket_nodes_path %>

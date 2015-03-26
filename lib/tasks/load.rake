@@ -54,4 +54,9 @@ namespace :load do
       end
     end
   end
+
+  task :teams, [:filepath] => :environment do
+    filepath ||= "files/bracket_teams.xlsx"
+    raise "Needs to be implemented! In the meantime, use load:brackets"
+  end
 end

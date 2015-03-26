@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150220235588) do
+ActiveRecord::Schema.define(:version => 20150326182920) do
 
   create_table "bracket_nodes", :force => true do |t|
     t.integer  "parent_id"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(:version => 20150220235588) do
     t.string   "region"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_alive",   :default => true
   end
 
   create_table "users", :force => true do |t|

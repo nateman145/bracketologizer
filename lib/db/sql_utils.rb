@@ -7,4 +7,8 @@ module SqlUtils
     results = connection.execute(query)
     results.to_a
   end
+
+  def self.exec query
+    connection.execute(query)
+  end
 end

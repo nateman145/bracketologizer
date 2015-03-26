@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150326182920) do
+ActiveRecord::Schema.define(:version => 20150326184827) do
 
   create_table "bracket_nodes", :force => true do |t|
     t.integer  "parent_id"
@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(:version => 20150326182920) do
     t.boolean  "win"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "depth"
+    t.integer  "pts"
   end
 
   create_table "brackets", :force => true do |t|
@@ -26,6 +28,8 @@ ActiveRecord::Schema.define(:version => 20150326182920) do
     t.integer  "bracket_node_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "total_pts"
+    t.integer  "possible_pts"
   end
 
   create_table "teams", :force => true do |t|
